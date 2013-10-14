@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>yeyue</title>
+    <title>Github+Pelican搭建技术博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="yeyue">
@@ -64,7 +64,7 @@
           <div class="nav-collapse">
             <ul class="nav">
                           <li class="divider-vertical"></li>
-                  <li >
+                  <li class="active">
                     <a href="/category/tech.html">
 						<i class="icon-folder-open icon-large"></i>Tech
 					</a>
@@ -84,9 +84,20 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="/build_blog.html">Github+Pelican搭建技术博客</a></h1>
-                <div class="well small"><footer class="post-info">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Github+Pelican搭建技术博客">
+                                        Github+Pelican搭建技术博客
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
 <span class="label">Date</span>
 <abbr class="published" title="2013-10-14T00:00:00">
         <i class="icon-calendar"></i>Mon 14 October 2013
@@ -101,8 +112,8 @@
 	<a href="/tag/github.html"><i class="icon-tag"></i>github</a>
 	<a href="/tag/pelican.html"><i class="icon-tag"></i>pelican</a>
 	<a href="/tag/blog.html"><i class="icon-tag"></i>blog</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><hr />
+</footer><!-- /.post-info -->                </div>
+                <hr />
 <h3>使用Github Pages创建blog</h3>
 <p>Github为每一个用户分配了一个二级域名username.github.io，在Github下创建一个名为username.github.io的版本库，并向其master分支提交网站静态页面即可。</p>
 <ul>
@@ -129,12 +140,20 @@
 <span class="err">├──</span> <span class="n">content</span>              <span class="err">#</span> <span class="err">存放输入的源文件</span>
 <span class="err">│</span>   <span class="err">└──</span> <span class="p">(</span><span class="n">pages</span><span class="p">)</span>          <span class="err">#</span> <span class="err">存放手工创建的静态页面</span>
 <span class="err">├──</span> <span class="n">output</span>               <span class="err">#</span> <span class="err">生成的输出文件</span>
-<span class="err">├──</span> <span class="n">develop_server ...</span></pre></div>
-                        <a class="btn primary xsmall" href="/build_blog.html">more ...</a>
-                </div>
-        </div>
-        <hr />
+<span class="err">├──</span> <span class="n">develop_server</span><span class="p">.</span><span class="n">sh</span>    <span class="err">#</span> <span class="err">方便开启测试服务器</span>
+<span class="err">├──</span> <span class="n">Makefile</span>             <span class="err">#</span> <span class="err">方便管理博客的</span><span class="n">Makefile</span>
+<span class="err">├──</span> <span class="n">pelicanconf</span><span class="p">.</span><span class="n">py</span>       <span class="err">#</span> <span class="err">主配置文件</span>
+<span class="err">└──</span> <span class="n">publishconf</span><span class="p">.</span><span class="n">py</span>       <span class="err">#</span> <span class="err">主发布文件，可删除</span>
+</pre></div>
 
+
+<p>进入output把自己刚刚建好的username.github.io版本库clone下来：</p>
+<div class="highlight"><pre><span class="n">cd</span> <span class="n">output</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">:</span><span class="n">username</span><span class="o">/</span><span class="n">username</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">git</span>
+</pre></div>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">

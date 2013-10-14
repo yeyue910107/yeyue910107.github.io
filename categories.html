@@ -84,57 +84,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="/build_blog.html">Github+Pelican搭建技术博客</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-10-14T00:00:00">
-        <i class="icon-calendar"></i>Mon 14 October 2013
-</abbr>
-<span class="label">By</span>
-<a href="/author/yeyue.html"><i class="icon-user"></i>yeyue</a>
-<span class="label">Category</span>
-<a href="/category/tech.html"><i class="icon-folder-open"></i>Tech</a>.
-
-
-<span class="label">Tags</span>
-	<a href="/tag/github.html"><i class="icon-tag"></i>github</a>
-	<a href="/tag/pelican.html"><i class="icon-tag"></i>pelican</a>
-	<a href="/tag/blog.html"><i class="icon-tag"></i>blog</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><hr />
-<h3>使用Github Pages创建blog</h3>
-<p>Github为每一个用户分配了一个二级域名username.github.io，在Github下创建一个名为username.github.io的版本库，并向其master分支提交网站静态页面即可。</p>
 <ul>
-<li>登陆Github，创建一个名为username.github.io的版本库（username即Github账户名）。</li>
-<li>点击Setting，选择一个模板，点击发布public按钮。</li>
-<li>等待几分钟，便可以访问http://username.github.io，blog主页已经显示。</li>
+	<li><a href="category/tech.html">Tech</a></li>
 </ul>
-<h3>安装pelican和markdown</h3>
-<div class="highlight"><pre><span class="n">pip</span> <span class="n">install</span> <span class="n">pelican</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">markdown</span>
-</pre></div>
-
-
-<h3>创建博客目录</h3>
-<div class="highlight"><pre><span class="n">mkdir</span> <span class="n">blog</span>
-<span class="n">cd</span> <span class="n">blog</span>
-<span class="n">pelican</span><span class="o">-</span><span class="n">quickstart</span>
-</pre></div>
-
-
-<p>根据提示一步步输入相应的配置项，也可以直接默认配置，以后可以通过pelicanconf.py文件修改。</p>
-<p>以下是生成的目录结构：</p>
-<div class="highlight"><pre><span class="n">blog</span><span class="o">/</span>
-<span class="err">├──</span> <span class="n">content</span>              <span class="err">#</span> <span class="err">存放输入的源文件</span>
-<span class="err">│</span>   <span class="err">└──</span> <span class="p">(</span><span class="n">pages</span><span class="p">)</span>          <span class="err">#</span> <span class="err">存放手工创建的静态页面</span>
-<span class="err">├──</span> <span class="n">output</span>               <span class="err">#</span> <span class="err">生成的输出文件</span>
-<span class="err">├──</span> <span class="n">develop_server ...</span></pre></div>
-                        <a class="btn primary xsmall" href="/build_blog.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-
         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
